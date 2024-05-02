@@ -1,11 +1,11 @@
-# test 
+# README Generator  
 ![Github license](https://img.shields.io/badge/license--blue.svg)
 ## Description
-test
+The purpose for this project is to create a README.md using node.js.User are given a list of questions to generate the new README file.
 ## Deployed Application URL
-test
+github
 ## Screenshot
-![alt-text](test)
+![alt-text](index.js)
 ## Table of Contents
 * [Features](#features)
 * [Languages & Dependencies](#languagesanddependencies)
@@ -14,14 +14,14 @@ test
 * [Testing](#testing)
 * [Questions](#questions)
 ## Features
-test
+generates README
 ## Languages & Dependencies
-test
+inquirer
 ## How to Use This Application:
-test
+English, and Nodejs
 ## Contributors
-test
+Jerrika
 ## Testing
 test
 ## Questions
-Please send your questions [here](mailto:test?subject=[GitHub]%20Dev%20Connect) or visit [github/test](https://github.com/test).
+Please send your questions [here](mailto:dxtofocused@gmail.com?subject=[GitHub]%20Dev%20Connect) or visit [github/Devinthedeveloper614](https://github.com/Devinthedeveloper614).
