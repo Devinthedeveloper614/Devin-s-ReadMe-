@@ -1,10 +1,9 @@
-//Including packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-//Creating an array of questions for user input
+// Creating an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -73,14 +72,32 @@ const questions = [
 
 // Writing README.md File
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+  // Extract directory path
+  const directory = path.dirname(fileName);
+
+  // Create directory if it doesn't exist
+  if (!fs.existsSync(directory)) {
+    fs.mkdirSync(directory, { recursive: true });
+  }
+
+  // Write file
+  fs.writeFile(fileName, data, err => {
+    if (err) {
+      console.error('Error writing to file:', err);
+    } else {
+      console.log(`${fileName} generated successfully!`);
+    }
+  });
 }
 
 // Initializing app
 function init() {
   inquirer.prompt(questions).then((responses) => {
     console.log("Creating Professional README.md File...");
-    writeToFile("./dist/README.md", generateMarkdown({ ...responses }));
+    const markdownContent = generateMarkdown(responses);
+    writeToFile("./dist/README.md", markdownContent);
   });
 }
+
+// Call init function to start the application
 init();
