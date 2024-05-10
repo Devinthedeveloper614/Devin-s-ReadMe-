@@ -16,12 +16,12 @@ test
 ## Features
 test
 ## Languages & Dependencies
-inquirer
+Inquirer 
 ## How to Use This Application:
-test
+English,node.js, Inquirer 
 ## Contributors
-test
+na
 ## Testing
-test
+na
 ## Questions
-Please send your questions [here](mailto:test?subject=[GitHub]%20Dev%20Connect) or visit [github/test](https://github.com/test).
+Please send your questions [here](mailto:dxtofocused@gmail.com?subject=[GitHub]%20Dev%20Connect) or visit [github/Devinthedeveloper614](https://github.com/Devinthedeveloper614).
